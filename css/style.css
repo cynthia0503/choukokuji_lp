@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #eee;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.lp {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-bottom: min(39.6vw, 297px);
+  overflow: hidden;
+  background: #fff;
+}
+
+.layer {
+  position: relative;
+}
+
+.fv-copy,
+.worry-copy,
+.home-copy,
+.reason-copy,
+.comment-copy,
+.comment-copy-l,
+.attempt-title,
+.attempt-copy,
+.massage-title,
+.massage-copy,
+.intoroduce-title,
+.question-answer,
+.finish-title,
+.finish_04-txt {
+  position: absolute;
+  height: auto;
+}
+
+.fv-copy {
+  top: 21%;
+  left: 8%;
+  width: 84%;
+}
+
+.worry-copy {
+  top: 22%;
+  left: 9.2%;
+  width: 81.6%;
+}
+
+.home-copy {
+  top: 22%;
+  left: 0;
+  width: 100%;
+}
+
+.reason-copy {
+  top: 22%;
+  left: 17.5%;
+  width: 65%;
+}
+
+.comment-copy {
+  top: 5%;
+  right: 3%;
+  width: 40%;
+}
+
+.comment-copy-l{
+  top: 5%;
+  left: 3%;
+  width: 40%;
+}
+
+.attempt-title {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.attempt-copy {
+  top: 3%;
+  right: 4%;
+  width: 73%;
+}
+
+.massage-title {
+  bottom:-2%;
+  left: 6.5%;
+  width: 87%;
+}
+
+.massage-copy {
+  top: 3%;
+  right: 1%;
+  width: 80%;
+}
+
+.intoroduce-title {
+  top: 6%;
+  left: 8.5%;
+  width: 83%;
+}
+
+.question-answer {
+  left: 2.7%;
+  width: 94.5%;
+}
+
+.question-answer1 {
+  top: 11%;
+}
+
+.question-answer2 {
+  top: 36%;
+}
+
+.question-answer3 {
+  top:60.5%;
+}
+
+.question-answer4 {
+  top: 85.5%;
+}
+
+.finish-title {
+  inset: 0;
+  width: 100%;
+}
+
+.finish_04-txt {
+  width: 62.4%;
+  right: 0;
+  top:13%
+}
+
+.fv-copy {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fv-copy.is-show {
+  opacity: 1;
+}
+
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.fade-up.is-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  .fv-copy,
+  .fade-up {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+.contact {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contact a {
+  display: block;
+}
+
+@media (min-width: 751px) {
+  .lp {
+    box-shadow: 0 0 24px rgb(0 0 0 / 8%);
+  }
+}
