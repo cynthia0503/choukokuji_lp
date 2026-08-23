@@ -150,11 +150,15 @@ img {
 
 .fv-copy {
   opacity: 0;
-  transition: opacity 1s ease;
+  transform: translateY(40px);
+  transition:
+    opacity 1s ease,
+    transform 1s ease;
 }
 
 .fv-copy.is-show {
   opacity: 1;
+  transform: translateY(0);
 }
 
 .fade-up {
