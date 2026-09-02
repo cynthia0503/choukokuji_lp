@@ -78,7 +78,7 @@ if ('IntersectionObserver' in window) {
     });
   }, {
     threshold: 0.2,
-    rootMargin: '0px 0px -10%'
+    rootMargin: '0px 0px -15%'
   });
 
   fadeTargets.forEach((target) => {
