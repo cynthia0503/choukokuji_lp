@@ -315,18 +315,27 @@ img {
 }
 
 @media (max-width: 520px) {
-  .footer-nav,
-  .legal-row {
-    display: block;
+  .footer {
+    padding-right: 8px;
+    padding-left: 8px;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 6px;
   }
 
   .footer-nav a {
     display: block;
-    margin-top: 14px;
+    margin: 0;
+    font-size: clamp(9px, 2.67vw, 10px);
+    white-space: nowrap;
   }
 
-  .footer-nav a:first-child {
-    margin-top: 0;
+  .legal-row {
+    display: block;
   }
 
   .legal {
